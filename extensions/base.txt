@@ -1,0 +1,8 @@
+k--kato.intellij-idea-keybindings
+GitHub.copilot
+GitHub.copilot-chat
+PKief.material-icon-theme
+usernamehw.errorlens
+eamodio.gitlens
+EditorConfig.EditorConfig
+streetsidesoftware.code-spell-checker

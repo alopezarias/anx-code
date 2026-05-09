@@ -1,0 +1,6 @@
+mtxr.sqltools
+mtxr.sqltools-driver-pg
+mtxr.sqltools-driver-mysql
+mtxr.sqltools-driver-sqlite
+ms-mssql.mssql
+cweijan.vscode-database-client2
