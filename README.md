@@ -21,6 +21,16 @@ Configuración personal de VS Code inspirada en JetBrains IDEs:
 
 [![GitLens](https://img.shields.io/badge/Install-GitLens-blue?logo=visualstudiocode)](vscode:extension/eamodio.gitlens)
 
+## AI extensions manually
+
+[![OpenAI](https://img.shields.io/badge/Install-OpenAI-blue?logo=visualstudiocode)](vscode:extension/openai.chatgpt)
+
+[![GitHub Copilot](https://img.shields.io/badge/Install-GitHub%20Copilot-blue?logo=visualstudiocode)](vscode:extension/GitHub.copilot)
+
+[![GitHub Copilot Chat](https://img.shields.io/badge/Install-Copilot%20Chat-blue?logo=visualstudiocode)](vscode:extension/GitHub.copilot-chat)
+
+[![Claude Code](https://img.shields.io/badge/Install-Claude%20Code-blue?logo=visualstudiocode)](vscode:extension/anthropic.claude-code)
+
 ## One-command install
 
 ### macOS / Linux
@@ -50,6 +60,16 @@ cd vscode-jetbrains-dotfiles
 
 ```powershell
 .\install.ps1 webstorm
+```
+
+### AI
+
+```bash
+./install.sh ai
+```
+
+```powershell
+.\install.ps1 ai
 ```
 
 ### Rider-like
@@ -104,4 +124,3 @@ Para importarlos:
 ## Notes
 
 Cambia `TU_USUARIO` por tu usuario u organización de GitHub antes de usar los comandos de instalación.
-

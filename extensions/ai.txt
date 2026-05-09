@@ -1,0 +1,4 @@
+openai.chatgpt
+GitHub.copilot
+GitHub.copilot-chat
+anthropic.claude-code

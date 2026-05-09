@@ -1,5 +1,5 @@
 param(
-    [ValidateSet("base", "webstorm", "rider", "pycharm", "datagrip", "all")]
+    [ValidateSet("base", "ai", "webstorm", "rider", "pycharm", "datagrip", "all")]
     [string]$Profile = "base"
 )
 
@@ -62,6 +62,10 @@ Install-ExtensionsFromFile (Join-Path $scriptDir "extensions/base.txt")
 switch ($Profile) {
     "base" {
     }
+    "ai" {
+        Write-Host "Installing AI extensions..."
+        Install-ExtensionsFromFile (Join-Path $scriptDir "extensions/ai.txt")
+    }
     "webstorm" {
         Write-Host "Installing WebStorm-like extensions..."
         Install-ExtensionsFromFile (Join-Path $scriptDir "extensions/webstorm.txt")
@@ -80,6 +84,7 @@ switch ($Profile) {
     }
     "all" {
         Write-Host "Installing all profile extensions..."
+        Install-ExtensionsFromFile (Join-Path $scriptDir "extensions/ai.txt")
         Install-ExtensionsFromFile (Join-Path $scriptDir "extensions/webstorm.txt")
         Install-ExtensionsFromFile (Join-Path $scriptDir "extensions/rider.txt")
         Install-ExtensionsFromFile (Join-Path $scriptDir "extensions/pycharm.txt")

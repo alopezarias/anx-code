@@ -77,6 +77,10 @@ install_extensions "$SCRIPT_DIR/extensions/base.txt"
 case "$PROFILE" in
   base)
     ;;
+  ai)
+    echo "Installing AI extensions..."
+    install_extensions "$SCRIPT_DIR/extensions/ai.txt"
+    ;;
   webstorm)
     echo "Installing WebStorm-like extensions..."
     install_extensions "$SCRIPT_DIR/extensions/webstorm.txt"
@@ -95,6 +99,7 @@ case "$PROFILE" in
     ;;
   all)
     echo "Installing all profile extensions..."
+    install_extensions "$SCRIPT_DIR/extensions/ai.txt"
     install_extensions "$SCRIPT_DIR/extensions/webstorm.txt"
     install_extensions "$SCRIPT_DIR/extensions/rider.txt"
     install_extensions "$SCRIPT_DIR/extensions/pycharm.txt"
@@ -102,7 +107,7 @@ case "$PROFILE" in
     ;;
   *)
     echo "Unknown profile: $PROFILE"
-    echo "Usage: ./install.sh [base|webstorm|rider|pycharm|datagrip|all]"
+    echo "Usage: ./install.sh [base|ai|webstorm|rider|pycharm|datagrip|all]"
     exit 1
     ;;
 esac
